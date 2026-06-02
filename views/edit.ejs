@@ -1,85 +1,98 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
     <title>Edit Book</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
+<div class="form-container">
+
     <h1>Edit Book</h1>
-
-    <a href="/">Back To Home</a>
-
-    <br><br>
 
     <form action="/update/<%= singleBook._id %>" method="POST" enctype="multipart/form-data">
 
-        <div>
+        <div class="form-group">
             <label>Book Name</label>
-            <br>
-            <input type="text" name="bookName" value="<%= singleBook.bookName %>" required>
+            <input
+                type="text"
+                name="bookName"
+                value="<%= singleBook.bookName %>"
+                required>
         </div>
 
-        <br>
-
-        <div>
+        <div class="form-group">
             <label>Author Name</label>
-            <br>
-            <input type="text" name="author" value="<%= singleBook.author %>" required>
+            <input
+                type="text"
+                name="author"
+                value="<%= singleBook.author %>"
+                required>
         </div>
 
-        <br>
-
-        <div>
+        <div class="form-group">
             <label>Price</label>
-            <br>
-            <input type="number" name="price" value="<%= singleBook.price %>" required>
+            <input
+                type="number"
+                name="price"
+                value="<%= singleBook.price %>"
+                required>
         </div>
 
-        <br>
-
-        <div>
+        <div class="form-group">
             <label>Category</label>
-            <br>
-            <input type="text" name="category" value="<%= singleBook.category %>" required>
+            <input
+                type="text"
+                name="category"
+                value="<%= singleBook.category %>"
+                required>
         </div>
 
-        <br>
-
-        <div>
+        <div class="form-group">
             <label>Description</label>
-            <br>
-            <textarea name="description" rows="5" cols="40" required><%= singleBook.description %></textarea>
+            <textarea
+                name="description"
+                rows="5"
+                required><%= singleBook.description %></textarea>
         </div>
 
-        <br>
-
-        <div>
+        <div class="form-group">
             <label>Current Image</label>
-            <br><br>
 
-            <img src="/uploads/<%= singleBook.image %>" alt="<%= singleBook.bookName %>" width="180" height="250">
+            <img
+                src="/uploads/<%= singleBook.image %>"
+                alt="<%= singleBook.bookName %>"
+                class="current-image">
         </div>
 
-        <br>
-
-        <div>
+        <div class="form-group">
             <label>Change Image</label>
-            <br>
-            <input type="file" name="image" accept="image/*">
+            <input
+                type="file"
+                name="image"
+                accept="image/*">
         </div>
 
-        <br>
-
-        <button type="submit">
+        <button type="submit" class="submit-btn">
             Update Book
         </button>
 
     </form>
+
+    <br>
+
+    <div class="action-buttons">
+        <a href="/" class="btn view-btn">
+            Back Home
+        </a>
+    </div>
+
+</div>
 
 </body>
 

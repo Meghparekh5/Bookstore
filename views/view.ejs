@@ -1,56 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <%= book.bookName %>
-    </title>
+    <title><%= book.bookName %></title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
 
-    <div class="container">
+<div class="details-container">
 
-        <img src="/uploads/<%= book.image %>" alt="<%= book.bookName %>" class="book-image">
+<img
+    src="/uploads/<%= book.image %>"
+    alt="<%= book.bookName %>"
+    class="details-image">
 
-        <div>
-         <strong> BOOK NAME : </strong>
-          <%= book.bookName %>
-        </div>
+<h1><%= book.bookName %></h1>
 
-        <div class="info">
-            <strong>Author:</strong>
-            <%= book.author %>
-        </div>
+<div class="info">
+    <strong>Author:</strong>
+    <%= book.author %>
+</div>
 
-        <div class="info">
-            <strong>Price:</strong>
-            ₹<%= book.price %>
-        </div>
+<div class="info">
+    <strong>Price:</strong>
+    ₹<%= book.price %>
+</div>
 
-        <div class="info">
-            <strong>Category:</strong>
-            <%= book.category %>
-        </div>
+<div class="info">
+    <strong>Category:</strong>
+    <%= book.category %>
+</div>
 
-        <div class="description">
-            <strong>Description:</strong>
-            <%= book.description %>
-        </div>
+<div class="description">
+    <strong>Description:</strong><br><br>
+    <%= book.description %>
+</div>
 
-        <div class="btn-group">
+<div class="action-buttons">
+    <a href="/" class="btn view-btn">Back Home</a>
+</div>
 
-            <a href="/" class="btn back">
-                Back
-            </a>
 
-        </div>
-
-    </div>
+</div>
 
 </body>
-
 </html>

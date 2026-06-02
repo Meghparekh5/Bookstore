@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.use("/uploads", express.static("uploads"));
 
 mongoose
-  .connect("mongodb://localhost:27017/bookstore")
+  .connect("mongodb://parekhmegh155_db_user:Meghport11@ac-dgvdc7z-shard-00-00.6avmod0.mongodb.net:27017,ac-dgvdc7z-shard-00-01.6avmod0.mongodb.net:27017,ac-dgvdc7z-shard-00-02.6avmod0.mongodb.net:27017/?ssl=true&replicaSet=atlas-qbs3rt-shard-0&authSource=admin&appName=bookStore")
   .then(() => {
     console.log("MongoDB Connected Successfully");
   })
