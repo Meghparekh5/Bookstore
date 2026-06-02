@@ -1,0 +1,204 @@
+:root{
+    --dark:#6e6e6d;
+    --pink:#fad0c9;
+    --bg:#f7f4f2;
+    --white:#ffffff;
+    --text:#3b3b3b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    padding:30px;
+}
+
+a{
+    text-decoration:none;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:var(--dark);
+}
+
+.add-btn{
+    display:inline-block;
+    background:var(--dark);
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+.add-btn:hover{
+    opacity:.9;
+}
+
+.book-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.book-card{
+    width:280px;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.book-card:hover{
+    transform:translateY(-5px);
+}
+
+.book-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.book-content{
+    background:var(--pink);
+    padding:18px;
+}
+
+.book-content h2{
+    margin-bottom:10px;
+    color:var(--dark);
+}
+
+.book-content p{
+    margin-bottom:8px;
+}
+
+.card-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+.btn{
+    padding:8px 14px;
+    border-radius:8px;
+    color:white;
+    font-size:14px;
+}
+.book-image{
+    width: 320px;
+    height: 320px;
+}
+.view-btn{
+    background:var(--dark);
+}
+
+.edit-btn{
+    background:#8c8c8b;
+}
+
+.delete-btn{
+    background:#d96c6c;
+}
+
+.form-container{
+    max-width:650px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:var(--dark);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+}
+
+input:focus,
+textarea:focus{
+    border-color:var(--dark);
+}
+
+.submit-btn{
+    width:100%;
+    border:none;
+    padding:14px;
+    background:var(--dark);
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.details-container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.details-image{
+    width:300px;
+    height:420px;
+    object-fit:cover;
+    border-radius:15px;
+    border:5px solid var(--pink);
+    margin-bottom:20px;
+}
+
+.details-container h1{
+    color:var(--dark);
+}
+
+.action-buttons{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.back-btn{
+    background:var(--dark);
+}
+
+.current-image{
+    width:180px;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    border:4px solid var(--pink);
+}
+
+.empty{
+    text-align:center;
+    margin-top:50px;
+    color:var(--dark);
+}
